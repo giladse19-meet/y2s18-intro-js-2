@@ -1,6 +1,8 @@
 // YOUR TASK: Add more pictures!
-var pictures = ['./imgs/dog.jpg'];
+var pictures = ['./imgs/dog.jpg','./imgs/frc.png','./imgs/miscar.jpeg','./imgs/drone.jpeg','./imgs/starwars.png'];
 var currentIndex = 0;
+var slide = document.getElementById('picture');
+
 
 function showNextPicture() {
   currentIndex++; // increment current picture
@@ -8,6 +10,5 @@ function showNextPicture() {
   if (currentIndex >= pictures.length) {
     currentIndex = 0;
   }
-
-  // YOUR TASK: Finish this function!
+  slide.src = pictures[currentIndex]
 }
